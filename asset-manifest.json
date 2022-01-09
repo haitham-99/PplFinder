@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.js": "/PplFinder/static/js/main.db21e9db.chunk.js",
+    "main.js.map": "/PplFinder/static/js/main.db21e9db.chunk.js.map",
+    "runtime~main.js": "/PplFinder/static/js/runtime~main.1cb51378.js",
+    "runtime~main.js.map": "/PplFinder/static/js/runtime~main.1cb51378.js.map",
+    "static/js/2.aa8d6410.chunk.js": "/PplFinder/static/js/2.aa8d6410.chunk.js",
+    "static/js/2.aa8d6410.chunk.js.map": "/PplFinder/static/js/2.aa8d6410.chunk.js.map",
+    "index.html": "/PplFinder/index.html",
+    "precache-manifest.89da3ed467252c28c4391ad70b6087fb.js": "/PplFinder/precache-manifest.89da3ed467252c28c4391ad70b6087fb.js",
+    "service-worker.js": "/PplFinder/service-worker.js"
+  }
+}
