@@ -8,7 +8,7 @@ import * as S from "./style";
 
 const UserList = ({ users, isLoading, favorites, setFavorits }) => {
   const [hoveredUserId, setHoveredUserId] = useState();
-  //state state variable which well call selected countries
+  //state variable which well call selected countries
   const [selectedCountries,setSelectedCountries]= useState([]);
   const [selectedUsers, setSelectedUsers]= useState(users);
 
@@ -21,7 +21,7 @@ const UserList = ({ users, isLoading, favorites, setFavorits }) => {
   };
   //do something after render and we can fetch data from api
   useEffect(() => {
-    if(users && selectedCountries && selectedCountries.length == 0) {
+    if(users && selectedCountries && selectedCountries.length === 0) {
       setSelectedUsers(users);
     }   
     else {
@@ -34,7 +34,7 @@ const UserList = ({ users, isLoading, favorites, setFavorits }) => {
       setSelectedCountries([country, ...selectedCountries]);
     }
     else {
-      setSelectedCountries(selectedCountries.filter(selectedCountry => selectedCountry != country));
+      setSelectedCountries(selectedCountries.filter(selectedCountry => selectedCountry !== country));
     }
   }
 
@@ -44,7 +44,7 @@ const UserList = ({ users, isLoading, favorites, setFavorits }) => {
     }
     else {
       if (favorites.includes(selectedUsers[index])) {
-        setFavorits(favorites.filter( favorite => favorite != selectedUsers[index]));
+        setFavorits(favorites.filter( favorite => favorite !== selectedUsers[index]));
       }
       else {
         setFavorits([...favorites, selectedUsers[index]]);
