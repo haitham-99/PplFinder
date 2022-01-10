@@ -1,6 +1,4 @@
 import { useState, useEffect } from "react";
-
-
 export const useFavoriteUsersFetch = () => {
   const [favorites, setFavorits] = useState();
 
@@ -8,7 +6,7 @@ export const useFavoriteUsersFetch = () => {
     storageFavorites();
   }, [favorites]);
 
-   function storageFavorites() {
+  async function storageFavorites() {
     if (!favorites) {
       setFavorits(JSON.parse(localStorage.getItem('favorites')||[]))
     }
